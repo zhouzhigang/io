@@ -92,10 +92,10 @@ Telling the kernel to start the operation and to notify us when the entire opera
 __Callback__: a callback function is called when the I/O has completed
 
 Difference:
+signal-driven I/O: the kernel tells us when an I/O operation can be __initiated__.
+asynchronous I/O: the kernel tells us when an I/O operation is __complete__.
 
-* signal-driven I/O: the kernel tells us when an I/O operation can be __initiated__.
-* asynchronous I/O: the kernel tells us when an I/O operation is __complete__.
-
+    
     App                         Kernel
     aio_read            ->      no datagram ready
                         <-            |
@@ -103,6 +103,7 @@ Difference:
                                 datagram ready
                                 copy data
     process <-deliver singanl-  copy completed
+
 
 __Pros__:
 
