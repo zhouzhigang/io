@@ -32,7 +32,6 @@ public class TimeServerHandler implements Runnable {
             while (true) {
                 body = in.readLine();
                 if (body == null) {
-                    System.out.println("Empty body");
                     break;
                 }
                 System.out.println("The time server receive order: " + body);
