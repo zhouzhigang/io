@@ -1,4 +1,4 @@
-# I/O Stream
+# Byte Streams
 
 ## InputSream and OutputStream
 
@@ -230,7 +230,7 @@ Read or write Primary data type.
 
 ## PrintStream
 
-`System.out`, System.error`
+`System.out`, `System.error`
 
     public class PrintStream extends FilterOutputStream implements Appendable, Closeable
 
@@ -255,4 +255,11 @@ Can "push back" or "unread" one byte.
     }
 
 
+## LineNumberInputStream
 
+@Deprecated
+an input stream filter that provides the added functionality of keeping track of the current line number.
+
+## Reference
+* [Package java.io API](http://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html)
+* [Java Byte Streams - InputStream and OutputStream](http://www.molotang.com/articles/754.html) [FilterInputStream and FilterOutputStream](http://www.molotang.com/articles/771.html)
